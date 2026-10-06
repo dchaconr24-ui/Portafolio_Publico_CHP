@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PORTAFOLIO DE SERVICIOS</title>
+<style>
+:root{--bg:#f7f4ee;--card:#fff;--ink:#1b2236;--mut:#5d6477;--navy:#1f2a44;--gold:#b8963e;--soft:#f1e9d4;--ln:#e4dccb;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#10162a;--card:#1a2340;--ink:#eef0f6;--mut:#a5adc4;--navy:#e9d9a6;--soft:#252f52;--ln:#2e3961}}
+:root[data-theme="dark"]{--bg:#10162a;--card:#1a2340;--ink:#eef0f6;--mut:#a5adc4;--navy:#e9d9a6;--soft:#252f52;--ln:#2e3961}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.w{max-width:960px;margin:0 auto;padding:0 20px}
+.hero{padding:56px 0 28px}.tag{display:inline-block;background:var(--soft);color:var(--navy);border-radius:99px;padding:5px 14px;font-size:13px;font-weight:600}
+h1{font-size:clamp(34px,7vw,60px);line-height:1.05;margin:16px 0 12px;color:var(--navy);letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(transparent 62%,var(--gold) 62%,var(--gold) 92%,transparent 92%)}
+.lead{color:var(--mut);font-size:18px;max-width:640px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}.chips span{border:1px solid var(--ln);background:var(--card);border-radius:99px;padding:6px 12px;font-size:13px}
+.tabs{display:flex;gap:8px;margin:30px 0 8px;background:var(--soft);padding:6px;border-radius:16px}
+.tabs button{flex:1;border:0;background:transparent;color:var(--ink);font:600 15px inherit;padding:13px 10px;border-radius:12px;cursor:pointer;transition:.25s}
+.tabs button.on{background:var(--navy);color:var(--bg)}
+.hint{color:var(--mut);font-size:14px;margin:6px 2px 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px}
+.c{background:var(--card);border:1px solid var(--ln);border-radius:20px;padding:20px;cursor:pointer;transition:.25s;position:relative;overflow:hidden}
+.c:hover{transform:translateY(-4px);box-shadow:0 12px 28px rgba(31,42,68,.14)}
+.c .i{font-size:30px}.c h3{margin:8px 0 4px;font-size:19px;color:var(--navy)}.c .t{color:var(--mut);font-size:14.5px}
+.c .more{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}.c.open .more{grid-template-rows:1fr}.more>div{overflow:hidden}
+.c .plus{position:absolute;top:16px;right:18px;width:28px;height:28px;border-radius:50%;background:var(--soft);display:grid;place-items:center;color:var(--navy);font-weight:700;transition:.3s}.c.open .plus{transform:rotate(45deg);background:var(--gold);color:#fff}
+.k{font-size:11px;letter-spacing:.08em;text-transform:uppercase;font-weight:700;color:var(--gold);margin:14px 0 4px}
+.c ul{margin:0;padding-left:18px;font-size:14.5px}.sk{display:flex;flex-wrap:wrap;gap:6px}.sk span{background:var(--soft);color:var(--navy);border-radius:99px;padding:4px 10px;font-size:13px;font-weight:600}.ok{list-style:none;padding:0!important}.ok li{padding-left:22px;position:relative;margin:3px 0}.ok li:before{content:'✔';position:absolute;left:0;color:var(--gold);font-weight:700}.lk{display:block;width:100%;margin-top:14px;border:0;border-radius:12px;background:var(--navy);color:var(--bg);font:700 14px inherit;padding:12px 14px;cursor:pointer;transition:.25s}.lk:hover{background:var(--gold);color:#fff}.v{background:var(--soft);border-radius:12px;padding:10px 12px;font-size:14.5px;margin-top:6px}
+h2{font-size:28px;color:var(--navy);margin:56px 0 6px;letter-spacing:-.01em}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;counter-reset:s;margin-top:14px}
+.steps div{background:var(--card);border:1px solid var(--ln);border-radius:16px;padding:18px;counter-increment:s}
+.steps div:before{content:counter(s);display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--navy);color:var(--bg);font-weight:700;margin-bottom:8px}
+.steps b{display:block;color:var(--navy)}.steps span{font-size:14px;color:var(--mut)}
+.cta{margin:56px 0 40px;background:var(--navy);color:var(--bg);border-radius:26px;padding:34px 26px;text-align:center}
+.cta h2{color:var(--bg);margin:0 0 8px}.cta p{margin:0 auto 18px;max-width:520px;opacity:.9}
+.cta a{display:inline-block;background:var(--gold);color:#fff;text-decoration:none;font-weight:700;padding:13px 24px;border-radius:99px}
+.th{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));width:42px;height:42px;border-radius:50%;border:1px solid var(--ln);background:var(--card);cursor:pointer;font-size:18px}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style></head><body><div class="w">
+<header class="hero"><span class="tag">PORTAFOLIO DE SERVICIOS</span>
+<h1>Your operations in order, your numbers <em>clear</em>.</h1>
+<p class="lead">I'm Carolina, with a financial mindset and skills built in customer service, writing, data entry and data analysis, developed in my on-site work. With 20+ years of accounting experience, I support you as a virtual assistant or as an accounting and audit specialist.</p>
+<div class="chips"><span>🔒 Confidentiality</span><span>⏱️ On-time delivery</span><span>🔎 Attention to detail</span><span>🌎 Spanish and support in other languages</span></div>
+<div class="tabs" role="tablist"><button class="on" data-p="va">🧑‍💻 Virtual Assistant</button><button data-p="ca">📊 Accounting &amp; Auditing</button></div>
+<p class="hint">Tap each service to see what I handle, my skills and the deliverables.</p></header>
+<section><div class="grid" id="g"></div></section>
+<h2>How we work</h2>
+<div class="steps"><div><b>You tell me</b><span>Goal, deadline and tools.</span></div><div><b>I propose</b><span>Clear scope and agreed deliverables.</span></div><div><b>I deliver and update</b><span>Visible progress, no need to chase me.</span></div><div><b>I review and hand over</b><span>Figures and texts double-checked before sending.</span></div></div>
+<div class="cta"><h2>Shall we talk about your project?</h2><p>Send me an invitation and I will reply with a clear proposal.</p><a href="#top">Invite me to your project</a></div>
+</div><button class="th" id="th" aria-label="Change theme">🌓</button>
+<script>
+const D={va:[
+["🗂️","Administrative support","Your day organized, your team coordinated.","I'm your administrative right hand. I organize your calendar and email, schedule and coordinate meetings, and handle reminders so nothing slips through.<br><br>I communicate with suppliers and clients on your behalf, follow up on orders, payments and deliveries, and keep every project's status up to date.<br><br>I also research and organize information, prepare documents, presentations and templates, and send you a progress summary so you always know where things stand.",["Planning and coordination (procurement and suppliers)","Productivity and collaboration tools from Microsoft","Clockify","Confidentiality"],["Calendar and inbox up to date","Updated task board","Documents and presentations ready to use","Weekly progress report","Among others"]],
+["💼","Financial support","Your accounting information, organized and up to date.","I support accounting tasks so your information stays organized and current. My main tasks:<ul class=\"ok\"><li>Organizing and filing accounting records</li><li>Entering invoices and vouchers</li><li>Bank reconciliations</li><li>Invoicing and receivables follow-up</li><li>Report preparation</li><li>Gathering information for the accountant</li></ul>",["Public Accountant (Colombia) with 20+ years of experience","Statutory audit (Revisoría Fiscal) specialist","Audit manager and supervisor","Experience in multinational environments","Closings, budgets and financial statements","IFRS and ISA","SAP, SIIGO and Excel"],["Reports","Analysis","Reconciliations","Management reports"],"ca"],
+["💬","Customer service","Every customer attended and followed up.","I serve your customers professionally, handle complaints and claims until they are resolved, and follow up on every case continuously to build loyalty.",["Communication with customers, suppliers and internal teams","Clear writing","Complaint handling","Timely follow-up"],["Replies within the agreed schedule","Reply templates tailored to you","Case log with status","Periodic summary of frequent inquiries"]],
+["⌨️","Data entry","Clean data you can trust.","I enter, clean and validate your information against the source document so your databases are reliable, complete and duplicate-free. I review figures with an accounting mindset, catch inconsistencies early and deliver everything in the format you request.",["Excel and Google Sheets","ERP: SAP and SIIGO","Inventory and stock control","Numerical review","Attention to detail"],["Complete, duplicate-free database","Sheet with validations and formulas","Report of inconsistencies found","File in the format you ask for"]],
+["✍️","Writing and proofreading","Clear texts, understood at first read.","I write articles, guides and reports in clear language with technical rigor, and proofread spelling, grammar and figures so every document projects a professional image to your customers, with no errors that cost you credibility.",["Writing audit and committee reports","Grammar and numerical review","Technical language explained simply","Accounting and finance knowledge"],["Final text ready to publish or send","Corrected document with visible changes","One-page executive summary"]],
+["🎧","Transcription and voice","Your audio turned into faithful text.","I transcribe your audio and video faithfully, with correct punctuation and a final review, so you can turn meetings, interviews or content into text ready to use, archive or publish. I also record voice-overs for your content.",["Spanish as main language","Careful spelling and punctuation","Content confidentiality"],["Proofread transcript in the format you choose","Timestamps if you need them","Voice-over audio file"]]],
+ca:[
+["📒","Accounting outsourcing","Up-to-date accounting without building a team.","I keep your books: records, closings, financial statements and reports, with multinational-level rigor adapted to your needs.",["Public accounting and IFRS","Accounting closings","Accounting, tax and fiscal analysis","Budgets","SAP and SIIGO"],["Monthly close","Financial statements","Budget and on-time reports","Report for parent company or regulators"]],
+["🔍","Internal audit","Processes assessed, risks in sight.","I assess your processes, identify risks and deliver clear findings with recommendations.",["Audit manager and supervisor","ISA and COSO ERM","Risk assessment","Working papers","Operational and agreed-upon procedures audits"],["Audit program","Risk matrix","Findings report","Improvement plan with follow-up"]],
+["📦","Internal control and inventory","What you own, well kept and well counted.","I design and review controls, and coordinate physical inventory counts and reconciliation.",["Inventory logistics","Financial and operational controls","Procurement and suppliers","SAP and SIIGO"],["Physical inventory count reconciled with accounting records","Variance report and root-cause analysis","Assessment of warehouse and procurement controls","Agreed-upon procedures audit report","Prioritized improvement recommendations"]],
+["🚢","Exporters and importers","Order for those who move goods.","I control the import process and organize costs and documents for companies that move goods.",["Import settlement and tracking","Process internal control","Logistics and procurement","Export Excellence Program 3E, Universidad de los Andes"],["Import settlement","Process flowchart","Cost analysis"]],
+["📑","Financial reports","Reports you can read in minutes.","I prepare and review formal reports for management, committees and regulators.",["Audit report issuance","Numerical review","Executive writing","Ethics and confidentiality"],["Committee-ready report","Executive summary","Verified figures"]]]};
+const g=document.getElementById('g');
+function r(p){g.innerHTML=D[p].map(s=>`<div class="c" tabindex="0"><span class="plus">+</span><div class="i">${s[0]}</div><h3>${s[1]}</h3><div class="t">${s[2]}</div><div class="more"><div><div class="k">What I handle</div>${s[3]}<div class="k">My skills</div><div class="sk">${s[4].map(x=>`<span>${x}</span>`).join('')}</div><div class="k">Deliverables</div><ul class="ok">${s[5].map(x=>`<li>${x}</li>`).join('')}</ul>${s[6]?`<button class="lk" data-go="${s[6]}">See the Accounting &amp; Auditing portfolio →</button>`:''}</div></div></div>`).join('');
+g.querySelectorAll('[data-go]').forEach(a=>a.onclick=e=>{e.stopPropagation();go(a.dataset.go)});
+g.querySelectorAll('.c').forEach(c=>{const t=()=>c.classList.toggle('open');c.onclick=t;c.onkeydown=e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t()}}})}
+function go(p){document.querySelectorAll('.tabs button').forEach(x=>x.classList.toggle('on',x.dataset.p===p));r(p);document.querySelector('.tabs').scrollIntoView({behavior:'smooth',block:'start'})}
+document.querySelectorAll('.tabs button').forEach(b=>b.onclick=()=>go(b.dataset.p));
+document.getElementById('th').onclick=()=>{const d=document.documentElement,dk=getComputedStyle(d).getPropertyValue('--bg').trim()==='#10162a';d.dataset.theme=dk?'light':'dark'};
+r('va');
+</script></body></html>
